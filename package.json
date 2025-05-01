@@ -1,0 +1,75 @@
+{
+    "name": "react-tailwind-css-starter-pack",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@clerk/clerk-react": "^5.30.2",
+        "@google/generative-ai": "^0.24.0",
+        "@headlessui/react": "^2.2.0",
+        "@react-google-maps/api": "^2.20.6",
+        "@tailwindcss/typography": "^0.5.16",
+        "clsx": "^2.1.1",
+        "cogs": "^4.8.5",
+        "cors": "^2.8.5",
+        "csv-parser": "^3.2.0",
+        "framer-motion": "^11.11.17",
+        "google-map-react": "^2.2.1",
+        "headlessui": "^0.0.0",
+        "lucide-react": "^0.462.0",
+        "marked": "^15.0.11",
+        "motion": "^12.9.3",
+        "papaparse": "^5.5.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.28.0",
+        "react-scripts": "^5.0.1",
+        "react-scroll": "^1.9.0",
+        "recharts": "^2.15.3",
+        "router": "^2.2.0",
+        "tailwind-merge": "^2.6.0",
+        "web-vitals": "^2.1.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git"
+    },
+    "author": "Pranay Gupta",
+    "bugs": {
+        "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
+    },
+    "scripts": {
+        "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.4",
+        "@types/react": "^18.3.12",
+        "autoprefixer": "^10.4.21",
+        "postcss": "^8.5.3",
+        "tailwindcss": "^3.4.17",
+        "typescript": "^4.9.5"
+    },
+    "description": "This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.",
+    "homepage": "/",
+    "main": "tailwind.config.js",
+    "license": "ISC"
+}
