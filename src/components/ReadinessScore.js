@@ -88,7 +88,7 @@ const ReadinessScore = () => {
       setError(null);
 
       try {
-        const response = await fetch("http://localhost:3000/api/gemini", {
+        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -122,7 +122,7 @@ const ReadinessScore = () => {
 
     const fetchGeminiScores = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/gemini-score", {
+        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini-score", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -155,7 +155,7 @@ const ReadinessScore = () => {
 
     const fetchGeminiProgress = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/gemini-progress", {
+        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini-progress", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
