@@ -8,13 +8,13 @@ const testimonials = [
     text: 'This platform transformed our approach to farming and education. It truly empowers rural communities.',
   },
   {
-    name: 'Ravi Patil',
+    name: 'Yogesh Kulkarni',
     role: 'Agricultural Officer',
     image: '/user2.jpg',
     text: 'I’ve never seen a tool this effective for real-time weather and crop insights. A must-have for rural development.',
   },
   {
-    name: 'Pooja Mehta',
+    name: 'Vijay Ambekar',
     role: 'Teacher, Nashik',
     image: '/user3.jpg',
     text: 'The AI-backed gives very good suggestions for development of villages.',
