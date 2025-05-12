@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: 'Anjali Verma',
     role: 'Village Head, Maharashtra',
-    image: '/user1.jpg',
+    image: '/user3.jpg',
     text: 'This platform transformed our approach to farming and education. It truly empowers rural communities.',
   },
   {
@@ -16,7 +16,7 @@ const testimonials = [
   {
     name: 'Vijay Ambekar',
     role: 'Teacher, Nashik',
-    image: '/user3.jpg',
+    image: '/user1.jpg',
     text: 'The AI-backed gives very good suggestions for development of villages.',
   },
 ];
