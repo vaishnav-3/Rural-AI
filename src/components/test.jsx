@@ -2,9 +2,9 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Anjali Verma',
+    name: 'Vijay Ambekar',
     role: 'Village Head, Maharashtra',
-    image: '/user3.jpg',
+    image: '/user1.jpg',
     text: 'This platform transformed our approach to farming and education. It truly empowers rural communities.',
   },
   {
@@ -14,9 +14,9 @@ const testimonials = [
     text: 'I’ve never seen a tool this effective for real-time weather and crop insights. A must-have for rural development.',
   },
   {
-    name: 'Vijay Ambekar',
+    name: 'Anjali Verma',
     role: 'Teacher, Nashik',
-    image: '/user1.jpg',
+    image: '/user3.jpg',
     text: 'The AI-backed gives very good suggestions for development of villages.',
   },
 ];
