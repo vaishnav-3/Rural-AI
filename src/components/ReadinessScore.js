@@ -19,6 +19,8 @@ import { progress } from "framer-motion";
 
 const MAP_API_KEY = "AIzaSyAs69xs8PnRAYu14WB4MaCGhKQov-8jOFM";
 
+const API_URL = 'https://backend-api-sx0t.onrender.com';
+
 
 
 
@@ -48,7 +50,7 @@ const ReadinessScore = () => {
       return;
     }
 
-    fetch("https://backend-api-sx0t.onrender.com/villageinfo", {
+    fetch(`${API_URL}/villageinfo`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -88,7 +90,7 @@ const ReadinessScore = () => {
       setError(null);
 
       try {
-        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini", {
+        const response = await fetch(`${API_URL}/api/gemini`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -122,7 +124,7 @@ const ReadinessScore = () => {
 
     const fetchGeminiScores = async () => {
       try {
-        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini-score", {
+        const response = await fetch(`${API_URL}/api/gemini-score`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -155,7 +157,7 @@ const ReadinessScore = () => {
 
     const fetchGeminiProgress = async () => {
       try {
-        const response = await fetch("https://backend-api-sx0t.onrender.com/api/gemini-progress", {
+        const response = await fetch(`${API_URL}/api/gemini-progress`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

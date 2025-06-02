@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const BASE_URL = 'https://backend-api-sx0t.onrender.com';
+
 const ReadinessForm = () => {
     const [states, setStates] = useState([]);
     const [districts, setDistricts] = useState([]);
@@ -28,13 +30,13 @@ const ReadinessForm = () => {
 
     // Fetch all states from backend
     useEffect(() => {
-        fetchAndSet('https://backend-api-sx0t.onrender.com/api/states', setStates);
+        fetchAndSet(`${BASE_URL}/api/states`, setStates);
     }, []);
 
     // Fetch districts when state is selected
     useEffect(() => {
         if (selectedState) {
-            fetchAndSet(`https://backend-api-sx0t.onrender.com/api/districts/${selectedState}`, setDistricts);
+            fetchAndSet(`${BASE_URL}/api/districts/${selectedState}`, setDistricts);
             if (districts.length > 0) setDistricts(districts); // avoid resetting if same state
             if (selectedDistrict) setSelectedDistrict(''); // reset district selection on state change
             setBlocks([]);
@@ -54,7 +56,7 @@ const ReadinessForm = () => {
     // Fetch blocks when district is selected
     useEffect(() => {
         if (selectedState && selectedDistrict) {
-            fetchAndSet(`https://backend-api-sx0t.onrender.com/api/blocks/${selectedState}/${selectedDistrict}`, setBlocks);
+            fetchAndSet(`${BASE_URL}/api/blocks/${selectedState}/${selectedDistrict}`, setBlocks);
             if (selectedBlock) setSelectedBlock(''); // reset block selection on district change
             setVillages([]);
             setSelectedVillage('');
@@ -69,7 +71,7 @@ const ReadinessForm = () => {
     // Fetch villages when block is selected
     useEffect(() => {
         if (selectedState && selectedDistrict && selectedBlock) {
-            fetchAndSet(`https://backend-api-sx0t.onrender.com/api/villages/${selectedState}/${selectedDistrict}/${selectedBlock}`, setVillages);
+            fetchAndSet(`${BASE_URL}/api/villages/${selectedState}/${selectedDistrict}/${selectedBlock}`, setVillages);
             if (selectedVillage) setSelectedVillage(''); // reset village selection on block change
         } else {
             setVillages([]);
